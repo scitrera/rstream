@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## [[1.0.1](https://github.com/rabbitmq-community/rstream/releases/tag/v1.0.1)]
+
+This release fixes source-distribution installs, adds release automation, and documents agent guidance for contributors.
+
+## 1.0.1 - 2026-04-20
+
+- [Release 1.0.1](https://github.com/rabbitmq-community/rstream/releases/tag/v1.0.1)
+
+### Added
+- GitHub Actions workflow for release changelog generation by @Gsantomaggio in [#268](https://github.com/rabbitmq-community/rstream/pull/268)
+
+### Fixed
+- Declare a PEP 517 `[build-system]` in `pyproject.toml` so pip can build wheels from the source distribution with the correct package metadata (version and files), fixing installs with `pip install --no-binary rstream`. ([#271](https://github.com/rabbitmq-community/rstream/pull/271))
+
+### Documentation
+- Add `AGENTS.md` for AI agent guidance by @Gsantomaggio in [#269](https://github.com/rabbitmq-community/rstream/pull/269)
+
+## [[1.0.0](https://github.com/rabbitmq-community/rstream/releases/tag/v1.0.0)]
+
+This release promotes rstream to 1.0 and includes producer exception handling improvements.
+
+## 1.0.0 - 2025-02-16
+- [Release 1.0.0](https://github.com/rabbitmq-community/rstream/releases/tag/v1.0.0)
+
+### Changed
+- Promote to 1.0 by @Gsantomaggio in [#267](https://github.com/rabbitmq-community/rstream/pull/267)
+- Refining producer exception logging and bubbling by @dbotwinick in [#265](https://github.com/rabbitmq-community/rstream/pull/265)
+
 ## [[0.40.1](https://github.com/rabbitmq-community/rstream/releases/tag/v0.40.1)]
 
 This release includes bug fixes and improvements to connection handling.
